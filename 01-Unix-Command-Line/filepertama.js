@@ -1,1 +1,1 @@
-console.log('hai pull pertama');
+console.log('hai pull pertama nih');
