@@ -1,0 +1,16 @@
+BEGIN
+INPUT nilai awal
+
+IF (nilai awal < 68) THEN
+	PRINT nilai awal
+ELSE 
+	IF nilai awal % 5 >= 3 THEN
+		CALCULATE (nilai awal + 5 - (nilai awal % 5))
+		STORE the result of the calculation to "nilai akhir"
+		DISPLAY nilai akhir
+	ELSE
+		DISPLAY nilai awal
+	ENDIF
+ENDIF
+
+END

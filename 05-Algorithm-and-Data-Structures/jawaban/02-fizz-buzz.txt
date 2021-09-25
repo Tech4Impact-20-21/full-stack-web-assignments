@@ -1,0 +1,14 @@
+BEGIN
+INPUT N
+
+FOR every i starts from 1 until N
+	IF (number % 3 = 0) THEN
+		DISPLAY "Fizz"
+	ELSE IF (number % 5 = 0) THEN
+		DISPLAY "Buzz"
+	ELSE
+		DISPLAY "i"
+	ENDIF
+ENDFOR
+
+END
