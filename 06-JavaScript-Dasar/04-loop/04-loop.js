@@ -31,16 +31,51 @@ function isPrima (number) {
 /// Soal - 02
 /// Kamu diminta untuk menemukan bilangan prima ke-50, temukan bilangan tersebut menggunakan while loop 
 let primeCounter = 0;
-let fiftiethPrime;
+let fiftiethPrime = 1;
+
+
+// /// EDIT HERE
+// while (....) {}
 
 /// EDIT HERE
-while (....) {}
+function isPrime(i){
+
+    for(let j = 2; j <= Math.sqrt(i); j++){
+        if(i%j == 0){
+            return false;
+        }
+    }
+
+    return true;
+}
+
+while (primeCounter < 50) {
+    fiftiethPrime++;
+
+    if(isPrime(fiftiethPrime))
+        primeCounter++;
+}
+console.log(fiftiethPrime);
 
 
 /// Soal - 03
 /// Kamu diminta untuk menemukan bilangan ganjil ke-50, temukan bilangan tersebut menggunakan do while loop
 let oddCounter = 0;
-let fiftiethOdd;
+let fiftiethOdd=0;
+number = 0;
 
 /// EDIT HERE
-do { .... } while (....)
+do { 
+    number++;
+     if(number % 2 !== 0){
+         oddCounter++
+     } 
+} while (oddCounter < 50)
+
+fiftiethOdd = number;
+
+console.log(fiftiethOdd);
+
+
+
+

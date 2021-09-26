@@ -93,8 +93,8 @@ function convToUpperCase(sentence) {
     let hasil = ""
     sentence = sentence.toLowerCase();
     sentence = sentence.split(" ");
-    for(let word = 0; word < sentence.length; word++){
-        sentence[word] = sentence[word].charAt(0).toUpperCase() + sentence[word].slice(1);
+    for(let kata = 0; kata < sentence.length; kata++){
+        sentence[kata] = sentence[kata].charAt(0).toUpperCase() + sentence[kata].slice(1);
     }
     hasil = sentence.join(" ");
     return hasil;
@@ -118,4 +118,31 @@ console.log(convToUpperCase("helloworldwide"));
 /// (String) huruf yang pertama kali tidak ada kembarannya
 
 /// EDIT HERE
-function firstNonRepeatedChar(....) { .... }
+// function firstNonRepeatedChar(....) { .... }
+function firstNonRepeatedChar(word) { 
+    let arr = [];
+    if(word.includes(" ")){
+        return "kata tidak boleh dipisah";
+    }
+    for(let i = 0; i<word.length ; i++){
+        if(word[i] == " "){
+            return "kata tidak boleh dipisah";;
+        }
+        if(!arr[word[i]]){
+            arr[word[i]] = 1;
+        }
+        else{
+            arr[word[i]]++;
+        }
+    }
+    for(let i = 0; i<word.length; i++){
+        if(arr[word[i]]==1){
+            return word[i];
+        }
+    }
+    return "";
+}
+
+console.log(firstNonRepeatedChar("alloha"));
+console.log(firstNonRepeatedChar("hello world"));
+console.log(firstNonRepeatedChar("wooohoowh"));
