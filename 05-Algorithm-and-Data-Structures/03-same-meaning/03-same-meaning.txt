@@ -1,0 +1,10 @@
+START
+INPUT”a”
+READ “a”
+STORE a to array variable(“kata awal”)
+REVERSE the array(“kata awal”)
+STORE the array REVERSE to variable (“kata balik”)
+COMPARE (“kata awal”) with (“kata balik”)
+IF “kata awal” same as “kata balik” THEN DO DISPLAY “true”
+ELSE “false”
+END

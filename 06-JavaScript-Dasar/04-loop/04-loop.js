@@ -61,18 +61,15 @@ console.log(fiftiethPrime);
 /// Soal - 03
 /// Kamu diminta untuk menemukan bilangan ganjil ke-50, temukan bilangan tersebut menggunakan do while loop
 let oddCounter = 0;
-let fiftiethOdd=0;
-number = 0;
+let fiftiethOdd = 0;
 
 /// EDIT HERE
-do { 
-    number++;
-     if(number % 2 !== 0){
-         oddCounter++
-     } 
-} while (oddCounter < 50)
+do {
+    fiftiethOdd++;
+    if(fiftiethOdd % 2)
+        oddCounter++;
 
-fiftiethOdd = number;
+} while (oddCounter < 50);
 
 console.log(fiftiethOdd);
 

@@ -89,15 +89,18 @@ console.log(checkBMI(80,170))
 
 /// EDIT HERE
 
-function convToUpperCase(sentence) {
-    let hasil = ""
-    sentence = sentence.toLowerCase();
-    sentence = sentence.split(" ");
-    for(let kata = 0; kata < sentence.length; kata++){
-        sentence[kata] = sentence[kata].charAt(0).toUpperCase() + sentence[kata].slice(1);
+function convToUpperCase(str) {
+    let space = true;
+    for(let i=0; i < str.length; i++){
+        if(space){
+            space = false;
+            str = str.slice(0,i) + str.charAt(i).toUpperCase() + str.slice(i+1);
+        }
+        if(str[i]==" "){
+            space = true;
+        }
     }
-    hasil = sentence.join(" ");
-    return hasil;
+    return str;
 }
 console.log(convToUpperCase("hai ghina fairuz"));
 console.log(convToUpperCase("hello bandung"));

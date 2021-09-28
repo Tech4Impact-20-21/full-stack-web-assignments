@@ -1,0 +1,21 @@
+START
+READ variable suhu(N),jenissuhu,hasilkonversi
+INPUT “suhu(N”) with any value
+INPUT “jenissuhu” with any value
+
+IF jenissuhu is Fahrenheit, Then DO CALCULATE 
+C = ((N - 32) * (5/9))
+
+ELSE IF jenissuhu is Kelvin, Then DO CALCULATE
+C = (N - 273.15) 
+
+ELSE  IF jenisuhu is Celcius, Then DISPLAY
+N
+
+ELSE ”please input jenissuhu with fahrenheit,kelvin,or celcius ”
+
+SET hasilkonversi value with calculation result
+DISPLAY hasilkonversi
+
+
+END

@@ -1,1 +1,0 @@
-console.log('hai pull pertama nih');
