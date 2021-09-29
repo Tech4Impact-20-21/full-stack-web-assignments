@@ -16,7 +16,6 @@ Kalian diminta untuk menyelesaikan pertanyaan-pertanyaan dibawah ini secara bena
 
 /// WRITE YOUR ANALYSIS HERE
 
-
 /// Soal - 02
 /// Kamu diminta untuk melakukan analisa terhadap baris kode dibawah dengan instruksi detail sebagai berikut:
 /// - apabila kita menjalankan baris kode dibawah apa yang akan terjadi?
