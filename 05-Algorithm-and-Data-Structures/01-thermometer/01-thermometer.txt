@@ -1,0 +1,12 @@
+1.BEGIN
+2.    SET thermal value = "BesarTemperatur"
+3.    SET thermal type = "TipeTemperatur"
+4.    SET conversion result = "Result"
+5.    INPUT BesarTemperatur as integer
+6.    INPUT TipeTemperatur as string
+7.    IF TipeTemperatur == "Fahrenheit"
+8.        THEN Result = (BesarTemperatur - 32) * (5/9)
+9.    ELSE IF TipeTemperatur == "Kelvin"
+10.        THEN Result = (BesarTemperatur - 273.15)
+11.    ELSE Result = BesarTemperatur
+12.END
