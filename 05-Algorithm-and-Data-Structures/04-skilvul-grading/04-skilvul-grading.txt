@@ -1,0 +1,9 @@
+1.BEGIN
+2.    INPUT "score"
+3.    IF "score" mod by 5 IS 0 or "score" < 68 
+4.    or (("score" mod by 10 > 0 and "score" mod by 10 < 3) 
+5.    or ("score mod by 10 > 5 and "score" mod by 10 < 8)) 
+6.	THEN DISPLAY "score"
+7.    ELSE IF "score" more than 68 THEN "score" added by (5 minus by ("score" mod by 5))
+8.	THEN DISPLAY "score"
+9.END
