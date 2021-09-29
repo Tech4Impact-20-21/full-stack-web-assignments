@@ -23,7 +23,7 @@ for (let i = 1; i <=100; i++) {
 /// Soal - 02
 /// Kamu diminta untuk menemukan bilangan prima ke-50, temukan bilangan tersebut menggunakan while loop 
 let primeCounter = 0;
-let fiftiethPrime = 1;
+let fiftiethPrime = 0;
 
 while (primeCounter < 50) {
     fiftiethPrime++;
@@ -41,7 +41,9 @@ while (primeCounter < 50) {
     }
 
     if(flag == 1) {
+        // console.log(fiftiethPrime);
         primeCounter++;
+        // console.log(primeCounter);
     }
 }
 
@@ -50,8 +52,17 @@ console.log("\n" + fiftiethPrime);
 
 // /// Soal - 03
 // /// Kamu diminta untuk menemukan bilangan ganjil ke-50, temukan bilangan tersebut menggunakan do while loop
-// let oddCounter = 0;
-// let fiftiethOdd;
+let oddCounter = 0;
+let fiftiethOdd = 0;
 
-// /// EDIT HERE
-// do { .... } while (....)
+do { 
+    fiftiethOdd++;
+
+    if(fiftiethOdd % 2 == 1) {
+        oddCounter++;
+        // console.log(oddCounter);
+    }
+}
+while(oddCounter<50)
+
+console.log("\n" + fiftiethOdd);
