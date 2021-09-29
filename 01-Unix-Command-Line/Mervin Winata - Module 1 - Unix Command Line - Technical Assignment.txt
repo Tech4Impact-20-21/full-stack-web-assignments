@@ -1,0 +1,36 @@
+1. mkdir mervin
+
+2. cd mervin
+   mkdir sekolah kerja
+
+3. cd sekolah
+   touch ijazah.txt
+   cat > ijazah.txt
+     Perkenalkan namaku Mervin
+     Aku berasal dari Medan
+     Salam Kenal :D
+    cat ijazah.txt
+    touch portfolio.txt
+    cat > portfolio.txt
+      Saya pernah bekerja pada beberapa perusahaan salah satu diantaranya ialah
+
+      - Tokopedia
+      - Shopee
+      - Lazada
+
+4. cd ..
+
+5. cd kerja
+   touch cv.txt
+   cat > cv.txt
+     Salam,
+
+     Perkenalkan namaku Mervin, saya memiliki kegemaran
+     - Belajar
+     - Main Game
+     - Makan
+   cat cv.txt
+
+6. cd ..
+   cd sekolah
+   mv portfolio.txt ../kerja
