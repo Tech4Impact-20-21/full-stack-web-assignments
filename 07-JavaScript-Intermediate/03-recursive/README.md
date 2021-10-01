@@ -4,7 +4,7 @@
 > - dilarang untuk menghapus komentar
 
 ## Specs
-Kalian diminta untuk menyelesaikan pertanyaan-pertanyaan dibawah ini secara benar dan ikuti instruksi yang ada
+Kalian diminta untuk menyelesaikan pertanyaan-pertanyaan di bawah ini secara benar dan ikuti instruksi yang ada
 
 ### Soal - 01
 Kalian diminta untuk membuat sebuah fungsi `sumOfArray` dimana ia akan menghitung total dari sebuah `array of number`, fungsi tersebut memiliki spesifikasi sebagai berikut:
@@ -24,11 +24,34 @@ console.log(sumOfArray(arr2));
 ```
 
 ### Soal - 02
+Pada soal sebelumnya kamu diminta untuk membuat sebuah fungsi untuk mencari total sebuah `"array of number"`, pada soal kali ini kamu diminta untuk membuat sebuah fungsi yang mana akan memberikan jumlah angka yang nilainya melebihi nilai rata-rata. Berikut merupakan langkah-langkah yang dapat kalian gunakan untuk menyelesaikan masalah tersebut:
+1. pastikan bahwa array yang kalian gunakan pada `soal-01` dan `soal-02` itu identik atau sama
+2. cari nilai rata-rata menggunakan fungsi yang sudah kalian buat pada `soal-01`
+3. buat sebuah funsi yang mana memiliki 2 parameter
+   - arr [`Array`] => array of number
+   - avg [`Number`] => nilai rata-rata
+4. fungsi pada `soal-2` akan melakukan checking terhadap tiap-tiap nilai apakah ia melebihi nilai rata-rata atau tidak
+5. langkah terakhir adalah mengembalikan jumlah dari nilai yang melebihi nilai rata-rata
+
+Untuk mempermudah pengerjaan kami sudah menyediakan *code template*
+```Javascript
+const avg1 = .....;
+const avg2 = .....;
+function countAboveAvg( .... ) { .... }
+
+const totalAboveAvg1 = countAboveAvg(arr1, avg1);
+const totalAboveAvg2 = countAboveAvg(arr2, avg2);
+
+console.log(totalAboveAvg1);
+console.log(totalAboveAvg2);
+```
+
+### Soal - 03
 Kalian diminta untuk membuat fungsi yang mana akan mencari sebuah nilai didalam `array of number`, fungsi tersebut memiliki spesifikasi sebagai berikut:
 1. fungsi harus ditulis menggunakan `recursive`
 2. memiliki 2 parameter:
    - arr [`Array`] => array of number yang nanti akan kita cari value-nya
-   - numm [`Number`] => angka yang hendak kita cari
+   - num [`Number`] => angka yang hendak kita cari
 3. *return value*:
    - apabila kita tidak menemukan angka tersebut maka kita akan mengembalikan `"angka tidak ditemukan"`
    - apabila kita menemukan angka tersebut maka kita akan mengembalikan `"angka ditemukan pada index: $INDEX"`
@@ -43,8 +66,8 @@ searchInArray(arr, 8);
 ```
 
 
-### Soal - 03
-Kalian diminta untuk membuat fungsi yang mana nantinya akan mencetak sebuah piramida, fungsi tersebut memiliki spesifikasi sebagai berikut:
+### Soal - 04
+Kalian diminta untuk membuat fungsi yang mana nantinya akan mencetak sebuah piramida **alfabet**, fungsi tersebut memiliki spesifikasi sebagai berikut:
 1. fungsi harus ditulis menggunakan `recursive`
 2. memiliki 2 parameter yang identik dengan tipe data `Number`, hal ini kita butuhkan untuk membuat sebuah perulangan menggunakan `recursive`
 3. bentuk segitiga dapat kalian cetak menggunakan console.log didalam fungsi `trianglePattern`
@@ -68,11 +91,16 @@ trianglePattern(5, 5);
    ```
 2. Soal - 02
    ```Javascript
+   3 // Ada 3 elemen yang melebihi atau sama dengan nilai rata-rata yaitu 3, 4, dan 5
+   2 // Ada 3 elemen yang melebihi atau sama dengan nilai rata-rata yaitu 10 dan 22
+   ```
+3. Soal - 03
+   ```Javascript
    "angka tidak ditemukan"
    "angka ditemukan pada index: 0"
    "angka tidak ditemukan"
    ```
-3. Soal - 03
+4. Soal - 03
     ```Javascript
     "    A"
     "   BC"
