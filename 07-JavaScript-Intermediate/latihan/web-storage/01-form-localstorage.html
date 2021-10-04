@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="form">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname">
+        <br>
+        <br>
+        <button onclick="submit()" type="button">Submit</button>
+      </form>
+</body>
+<script>
+    function submit() {
+        // const form = document.getElementById('form');
+        // let first_name = form.elements[0].value;
+        let first_name = document.getElementById("fname").value;
+        console.log(first_name);
+        localStorage.setItem("first_name", first_name);
+
+        let last_name = document.getElementById("lname").value;
+        console.log(last_name);
+        localStorage.setItem("last_name", last_name);
+    }
+</script>
+</html>
