@@ -165,8 +165,43 @@
       const elBtnSubmit = document.querySelector('#btn-submit');
       const elBtnCancel = document.querySelector('#btn-cancel');
       
-      // EDIT HERE
+      elBtnComment.addEventListener("click", form);
+      elBtnSubmit.addEventListener("click", komen);
+      elBtnCancel.addEventListener("click", cancel);
 
+      function form() {
+          elCommentSection.classList.remove("d-none");
+          elBtnComment.classList.add("d-none");
+      }
+
+      function cancel() {
+          elCommentSection.classList.add("d-none");
+          elBtnComment.classList.remove("d-none");
+      }
+
+      function komen(e) {
+        e.preventDefault();
+
+        const komentar = document.createElement("div");
+        komentar.classList.add("fw-bold", "text-capitalize");
+        komentar.innerText = elInputUsername.value;
+
+        const wrap = document.createElement("div");
+        wrap.classList.add("ms-2", "me-auto");
+        wrap.append(komentar);
+        wrap.append(elInputComment.value);
+
+        const komenBaru = document.createElement("li");
+        komenBaru.classList.add("list-group-item");
+        komenBaru.append(wrap);
+        elCommentList.prepend(komenBaru);
+
+        elCommentSection.classList.add("d-none");
+        elBtnComment.classList.remove("d-none");
+
+        elInputUsername.value = "";
+        elInputComment.value = "";
+      }
     </script>
   </body>
 </html>
