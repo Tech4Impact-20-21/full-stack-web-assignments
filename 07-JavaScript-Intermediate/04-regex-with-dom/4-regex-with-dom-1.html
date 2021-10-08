@@ -1,0 +1,46 @@
+<!-- Question - 01 -->
+<!-- Create a username validation system: -->
+<!-- - First character can't be number -->
+<!-- - Min. 6 characters -->
+<!-- - Can't use any symbols -->
+<!-- Return alert with message "selamat datang $USERNAME" if valid and "mohon masukan username yang valid" if invalid -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Regex and DOM - 01</title>
+  </head>
+  <body>
+    <form id="form">
+      <div>
+        <label for="username">Username</label>
+        <input type="text" id="username" />
+      </div>
+      <button id="btn-submit" type="submit">submit</button>
+    </form>
+
+    <script>
+      // EDIT DOWN HERE
+      const elInputUsername = document.querySelector("#username");
+      const elBtnSubmit = document.querySelector("#btn-submit");
+      const elForm = document.querySelector("#form");
+      const usernameValidator = new RegExp(/^[a-zA-Z][a-zA-Z0-9]{5,}/);
+
+      elForm.onsubmit = function(e) {
+        e.preventDefault();
+        elForm.reset();
+      }
+
+      elBtnSubmit.onclick = function(){
+        if(usernameValidator.test(elInputUsername.value)){
+            alert(`selamat datang ${elInputUsername.value}`)
+        } else {
+            alert("mohon masukan username yang valid")
+        }
+      }
+    </script>
+  </body>
+</html>
