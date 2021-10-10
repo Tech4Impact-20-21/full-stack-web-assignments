@@ -1,0 +1,65 @@
+<!-- Soal - 01
+Kamu diminta untuk membuat sebuah sistem validasi username dengan kriteria sebagai berikut:
+
+huruf pertama tidak boleh angka
+minimal 6 karakter
+tidak diperbolehkan untuk menggunakan simbol apapun
+Berikut merupakan response yang akan kita berikan sesuai dengan masukan dari user:
+
+valid => menampilkan sebuah alert dengan pesan "selamat datang $USERNAME"
+invalid => menampilkan sebuah alert dengan pesan "mohon masukan username yang valid" -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Regex and DOM - 01</title>
+  </head>
+  <body>
+    <form id="form">
+      <div>
+        <label for="username">Username</label>
+        <input type="text" id="username" />
+      </div>
+      <button id="btn-submit" type="submit" onclick="testInput()">submit</button>
+    </form>
+
+    <script>
+      // EDIT DOWN HERE
+      const elInputUsername = document.querySelector("#username");
+      const elBtnSubmit = document.querySelector("#btn-submit");
+      const elForm = document.querySelector("#form");
+
+      function testInput(elInputUsername) {
+  // Validate lowercase letters
+  let regExp = /^[A-za-z][A-Za-z0-9]{4,}+$/mgi;
+  if(elInputUsername.value.match(regExp)) {
+    alert("Selamat Datang"+elInputUsername)
+  } else {
+    alert("mohon masukan username yang valid")
+}
+      }
+
+    //   const usernameValidator = new RegExp('^[A-za-z][A-Za-z0-9]{4,}+$');
+      
+    //   let regex = /^[A-za-z][A-Za-z0-9]{4,}+$/
+    //       return (regex.test(elForm));
+
+//   function testInput(usernameValidator, elInputUsername) {
+//   if (usernameValidator.test(elInputUsername)) {
+//     alert("Selamat Datang"+elInputUsername)
+//   } else {
+//     alert("mohon masukan username yang valid")
+//   }
+//   return alert;
+// }
+
+      elForm.onsubmit = function(e) {
+        e.preventDefault();
+      }
+
+    </script>
+  </body>
+</html>
