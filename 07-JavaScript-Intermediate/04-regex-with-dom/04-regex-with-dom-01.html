@@ -23,43 +23,26 @@ invalid => menampilkan sebuah alert dengan pesan "mohon masukan username yang va
         <label for="username">Username</label>
         <input type="text" id="username" />
       </div>
-      <button id="btn-submit" type="submit" onclick="testInput()">submit</button>
+      <button id="btn-submit" type="submit">submit</button>
     </form>
 
     <script>
       // EDIT DOWN HERE
-      const elInputUsername = document.querySelector("#username");
-      const elBtnSubmit = document.querySelector("#btn-submit");
-      const elForm = document.querySelector("#form");
+        const elInputUsername = document.querySelector("#username");
+        const elBtnSubmit = document.querySelector("#btn-submit");
+        const elForm = document.querySelector("#form");
+        const usernameValidator = new RegExp("^[A-Za-z][A-Za-z0-9]{5,}");
 
-      function testInput(elInputUsername) {
-  // Validate lowercase letters
-  let regExp = /^[A-za-z][A-Za-z0-9]{4,}+$/mgi;
-  if(elInputUsername.value.match(regExp)) {
-    alert("Selamat Datang"+elInputUsername)
-  } else {
-    alert("mohon masukan username yang valid")
-}
-      }
-
-    //   const usernameValidator = new RegExp('^[A-za-z][A-Za-z0-9]{4,}+$');
-      
-    //   let regex = /^[A-za-z][A-Za-z0-9]{4,}+$/
-    //       return (regex.test(elForm));
-
-//   function testInput(usernameValidator, elInputUsername) {
-//   if (usernameValidator.test(elInputUsername)) {
-//     alert("Selamat Datang"+elInputUsername)
-//   } else {
-//     alert("mohon masukan username yang valid")
-//   }
-//   return alert;
-// }
-
-      elForm.onsubmit = function(e) {
+        elForm.onsubmit = function(e) {
         e.preventDefault();
-      }
-
+        if(elInputUsername.value.match(usernameValidator)){
+            alert("selamat datang "+elInputUsername.value);
+        }
+        else{
+            alert("mohon masukan username yang valid"); 
+        }
+        elInputUsername.value = "";
+        }
     </script>
   </body>
 </html>
