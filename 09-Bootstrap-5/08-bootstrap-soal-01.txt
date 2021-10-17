@@ -1,0 +1,14 @@
+Soal - 01
+Kamu diminta untuk melakukan analisa sederhana terhadap beberapa masalah dan tuliskan jawaban kamu di dalam file 08-bootstrap-soal-01.txt.
+
+1. Apa itu CSS Framework?
+= is a collection of CSS stylesheets that are prepped and ready to use.
+
+2. Apakah bootstrap satu-satunya CSS Framework yang dapat kita gunakan?
+= No, there are alot of CSS Framework 
+
+3. Sebutkan beberapa CSS Framework selain Bootstrap
+= Tailwind, Foundation, Bulma, Skeleton and so much more
+
+4. Bagaimana tata cara penggunaan Bootstrap?
+= Copy from the jsdelivr bootstrap documentation into html
