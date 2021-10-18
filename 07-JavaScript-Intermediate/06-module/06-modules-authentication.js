@@ -6,18 +6,20 @@ export function validateLoginData(email, password) {
     const regexNumber = /[0-9]/
     const regexSymbol = /[-!$%^&*()_+|~=`{}\[\]:";'<>?,.\/]/
 
+    let message; 
+
     if (!email.match(emailValidator)) {
-        let message = "tolong masukan email yang valid"
+        message = "tolong masukan email yang valid"
         window.alert(message);
     } else if (password.match(passwordValidator) &&
-        elInputPassword.value.match(regexCapital) &&
-        elInputPassword.value.match(regexSmall) &&
-        elInputPassword.value.match(regexNumber) &&
-        elInputPassword.value.match(regexSymbol)) {
-        let message = "Welcome to The Jungle"
+        password.value.match(regexCapital) &&
+        password.value.match(regexSmall) &&
+        password.value.match(regexNumber) &&
+        password.value.match(regexSymbol)) {
+        message = "Welcome to The Jungle"
         window.alert(message);
     } else {
-        let message = "tolong masukan password sesuai ketentuan"
+        message = "tolong masukan password sesuai ketentuan"
         window.alert(message);
     }
 
