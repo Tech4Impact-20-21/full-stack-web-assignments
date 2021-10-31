@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 const CardProduct = ({ name, image, price, addToCart }) => {
   return (
     <div className="card w-100">
@@ -6,7 +8,7 @@ const CardProduct = ({ name, image, price, addToCart }) => {
         <h5 className="card-title">
           {new Intl.NumberFormat("en-US", {
             style: "currency",
-            currency: "USD"
+            currency: "USD",
           }).format(price)}
         </h5>
         <h6 className="card-subtitle mb-2 text-muted text-capitalize">
@@ -22,6 +24,22 @@ const CardProduct = ({ name, image, price, addToCart }) => {
       </div>
     </div>
   );
+};
+
+CardProduct.propTypes = {
+  name: PropTypes.string,
+  price: PropTypes.number,
+  image: PropTypes.string,
+  addToCart: PropTypes.func,
+};
+
+CardProduct.defaultProps = {
+  name: "",
+  price: "",
+  image: "",
+  addToCart: () => {
+    return null;
+  },
 };
 
 export default CardProduct;
