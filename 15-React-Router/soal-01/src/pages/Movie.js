@@ -1,6 +1,14 @@
+import { Redirect, useParams } from "react-router-dom";
+import data from "../dummy-data";
 const Movie = () => {
   // Variable berikut akan menampung data movie yang akan kita tampilkan
-  const movie = {};
+  const { id } = useParams();
+  const movie = data.find((dataFind) => dataFind.mal_id === Number(id));
+
+  if (!movie) {
+    return <Redirect to="/not-found" />;
+  }
+
   return (
     <div className="row my-5">
       <div className="card mb-3 p-0">
