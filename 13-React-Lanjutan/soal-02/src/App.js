@@ -9,56 +9,57 @@ export default function App() {
   const [total, setTotal] = useState(0);
   const [purchasedItem, setPurchasedItem] = useState(0);
   const [cart, setCart] = useState([]);
-  
-
-  useEffect(() => {
-    setPurchasedItem()
-  })
 
   const addToCart = (id) => {
-    console.log(id)
-    // const found = cart.find(value => value.id === id);
-    // const item = menus.find(value => value.id === id);
-    // const remainingItems = cart.find(value => value.id !== id)
-    
-    // if(found){
-    //   found.amount += 1
-    //   setCart([...remainingItems, found])
-    // }else{
-    //   setCart([...cart, {
-    //     id: item.id,
-    //     name: item.name,
-    //     price: item.price,
-    //     amount: 1,
-    //   }])
-    // }
-    
+    const menu = menus.find((menu) => menu.id === id);
+    const itemInCart = cart.find((item) => item.id === id);
+    if(itemInCart){
+      increaseCartAmount(id)
+    } else {
+      setCart([
+        ...cart,
+        {
+          id: id,
+          name: menu.name,
+          price: menu.price,
+          amount: 1
+        }
+      ])
+    }
   };
 
   const decreaseCartAmount = (id) => {
-    const found = cart.find(value => value.id === id);
-    const remainingItems = cart.find(value => value.id !== id)
-    
-    if(found){
-      if(found.amount > 1){
-        found.amount -= 1
-        setCart([...remainingItems, found])
-      }else{
-        setCart([...remainingItems])
-      }
-      
+    const specifiedItem = cart.find((item) => item.id === id);
+    const otherItems = cart.filter((item) => item.id !== id);
+    specifiedItem.amount -=1
+
+    if(specifiedItem.amount > 0){
+      setCart([
+        ...otherItems,
+        specifiedItem
+      ])
+    } else {
+      setCart(otherItems)
     }
+    
   };
 
   const increaseCartAmount = (id) => {
-    const found = cart.find(value => value.id === id);
-    const remainingItems = cart.find(value => value.id !== id)
-    
-    if(found){
-      found.amount += 1
-      setCart([...remainingItems, found])
-    }
+    const specifiedItem = cart.find((item) => item.id === id);
+    const otherItems = cart.filter((item) => item.id !== id);
+    specifiedItem.amount += 1;
+
+    setCart([
+      ...otherItems,
+      specifiedItem
+    ])
   };
+
+  useEffect(() => {
+    setTotal(cart.reduce(((previousValue, currentValue) => previousValue + currentValue.amount * currentValue.price), 0));
+    setPurchasedItem(cart.reduce(((previousValue, currentValue) => previousValue + currentValue.amount), 0))
+  },
+  [cart])
 
   return (
     <div className="bg-secondary">
