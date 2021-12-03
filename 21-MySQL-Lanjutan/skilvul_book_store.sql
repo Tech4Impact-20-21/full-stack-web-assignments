@@ -63,4 +63,4 @@ SELECT MAX(harga) FROM buku WHERE stock < 10;
 SELECT MIN(harga) FROM buku;
 
 -- Gunakan COUNT untuk melihat list data dengan kondisi harga buku di bawah 100000
-SELECT COUNT(*) FROM buku WHERE harga > 100000;
+SELECT COUNT(*) FROM buku WHERE harga < 100000;
