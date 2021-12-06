@@ -1,0 +1,20 @@
+1.Mohon jelaskan apa itu Node.js? Apa perbedannya dengan JavaScript?
+= Node.JS adalah juru bahasa atau lingkungan yang berjalan untuk bahasa JavaScript dengan beberapa perpustakaan khusus yang berguna.
+= Perbedaan antara Node.JS dan JavaScript: Node.JS terutama digunakan untuk mengakses atau melakukan operasi non-pemblokiran dari sistem operasi apa pun sementara JavaScript digunakan untuk aktivitas sisi klien apa pun untuk aplikasi web.
+
+2.Mohon jelaskan arsitektur dari Node.js?
+= Node.JS menggunakan arsitektur Single Threaded Event Loop, dengan alur kerja berikut:
+    - Klien mengirim permintaan ke server web untuk berinteraksi dengan aplikasi web.
+    - Node.JS mengambil permintaan yang masuk dan menambahkan permintaan tersebut ke antrian acara.
+    - Permintaan kemudian diteruskan satu per satu melalui loop acara. Ini memeriksa apakah permintaan cukup sederhana untuk tidak memerlukan sumber daya eksternal.
+    - Loop peristiwa kemudian memproses permintaan sederhana dan mengembalikan respons ke klien terkait.
+
+3.Apa perbedaan antara Built-in Module, External Module, dan Custom Module pada Node.js?
+= Built-in Module : modul yang dapat digunakan tanpa instalasi lebih lanjut.
+= External Module : modul yang memerlukan instalasi sebelum digunakan.
+= Custom Module : modul yang dibuat khusus yang dapat dimasukkan ke dalam aplikasi kita.
+
+4.Sebutkan salah satu contoh dari Built-in Module, External Module, dan Custom Module pada Node.js?
+= Built-in Module : http
+= External Module : csv
+= Custom Module : operasi aritmatika.
