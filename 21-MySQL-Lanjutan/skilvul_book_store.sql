@@ -1,6 +1,9 @@
 --CREATE database bernama skilvulbookstore--
 CREATE DATABASE skilvulbookstore;
 
+-- Use Database skilvulbookstore --
+USE skilvulbookstore;
+
 --CREATE tabel penerbit--
 CREATE TABLE penerbit(
     id INT(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
