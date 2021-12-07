@@ -26,13 +26,13 @@ const server = http.createServer((req, res) => {
   //jalankan server
 
   server.on("listening", () => {
-    console.log("server is listening on port 8000");
+    console.log(`server is listening on port ${port}`);
   });
   
 
   server.listen(port);
 
-  //close server
+//close server
 //   function closeServer() {
 //     server.close();
 //     console.log("server is closed")
