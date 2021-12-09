@@ -16,6 +16,7 @@
 
 3. server dapat melakukan berbagai operasi untuk merespon permintaan dari client ataupun melakukan tugas sebagai penyimpanan data, menghemat penyimpanan, mengirimkan informasi, menyimpan informasi dari pengguna untuk disimpan atau diolah kembali sebagai user experience, mengontrol akses ke konten, menyimpan session atau informasi, memberikan notifikasi dan komunikasi, serta menganalisis data.
 
+
 4. REST, atau Representational State Transfer, adalah arsitektur untuk menyediakan standarisasi antara sistem komputer di web, sehingga memudahkan m client dan server untuk berkomunikasi satu sama lain tanpa mengetahui proses yang berkerja masing-masing(independen) dan menerima respon yang sama dari permintaan yang dikirimkan.
 
 5. ada 4 jenis HTTP verbs basic yang digunakan untuk mengirimkan request dan berinteraksi dengan sistem :
