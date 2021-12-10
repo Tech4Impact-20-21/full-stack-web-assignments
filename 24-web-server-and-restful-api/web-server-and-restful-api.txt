@@ -13,7 +13,7 @@
 5. Apa saja jenis HTTP verbs yang ada (jelaskan fungsinya masing-masing)
 - GET    = Ambil Data
 - POST	 = Buat Data Baru
-- PUT	   = Update Data secara keseluruhan
+- PUT	 = Update Data secara keseluruhan
 - PATCH  = Update Data sebagian
 - DELETE = Hapus Data
 
