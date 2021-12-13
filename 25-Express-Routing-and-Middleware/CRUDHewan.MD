@@ -10,7 +10,7 @@
 ![Hewan-GetById](https://user-images.githubusercontent.com/76485051/145775823-faa4d155-ae43-480c-a3c7-80e9205cca19.png)
 ## PUT
 ![Hewan-PUT](https://user-images.githubusercontent.com/76485051/145776012-a512500b-a165-4f66-951d-8f90035c8dba.png)
-## DELETE
+## DELETE BY ID
 ![Hewan-DELETE](https://user-images.githubusercontent.com/76485051/145776049-765f104f-d0c9-4799-abd0-d0cf3d1cad39.png)
 <Br>
 ## 02-MIDDLEWARE
