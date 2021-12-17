@@ -1,0 +1,16 @@
+1. Jelaskan apa yang dimaksud dengan container pada docker !
+= Container Merupakan environment atau lingkungan untuk kebutuhan pengemasan aplikasi yang mencakup system tool, kode, runtime, dan konfigurasi. Container hanya diperbolehkan untuk mengakses resource yang telah diverifikasi oleh Docker image.
+
+2. Jelaskan apa perbedaan antara konsep container dengan virtual machine !
+= Virtual machine (VM) adalah sebuah emulasi dari sebuah sistem komputer. Secara sederhana, virtual machine membuat kita bisa membagi resource hardware dari satu hardware fisik menjadi beberapa sistem komputer. Teknologi ini sering digunakan untuk server dan memunculkan istilah Virtual Private Server (VPS) tapi sedikit pula digunakan oleh app developer karena project yang sedang dikerjakannya memiliki platform yang berbeda dengan platform yang dimiliki.
+
+= Berbeda dari VM, container adalah sebuah virtualisasi OS yang dapat membungkus suatu aplikasi beserta dependency dan environment-nya. Setiap container ini memiliki process yang terisolir sehingga tidak mengganggu host OS ataupun container yang lain. Prinsip container ini mirip dengan kontainer yang ada di kapal kargo di mana kapal kargo tersebut diibaratkan sebagai sistem komputer.
+
+3. Apa yang dimaksud dengan docker file ?
+= Dockerfile adalah file teks yang berisi semua perintah yang bisa dijalankan user pada baris perintah untuk membuat image. Ini mencakup semua instruksi yang diperlukan oleh docker untuk membangun image.
+
+4. Apa yang dimaksud dengan docker registery ?
+= Docker Registery adalah wadah atau tempat untuk menyimpan sebuah Docker image. Yang mana akan memberikan output sesuai dengan perintah yang diberikan.  
+
+5. Jelaskan bagaimana cara untuk menjalankan lebih dari 1 container secara bersamaan dan saling terhubung !
+= Untuk membuat image multi-container kita dapat menggunakan docker compose dengan format file docker-compose.yml yang menggabungkan beberapa dockerfile. dengan ini kita dapat menjalankan image hanya dengan satu localhost.
