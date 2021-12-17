@@ -36,13 +36,13 @@
 
 3. Create a schema for products data with many variants in SkilShop app and determine the appropriate relationship for that data! Data needed:
 
-  Product
+- Product
 
   - Product Name: Kaos Polos
 
   - Brand Name: SkilShirt
 
-  Varian Pertama
+- Varian Pertama
 
   - Varian Name 1: Kaos Polos Hitam
 
@@ -52,7 +52,7 @@
 
   - Price: Rp 99.000
 
-  Varian Kedua
+- Varian Kedua
 
   - Varian Name 2: Kaos Polos Navy
 
@@ -98,7 +98,7 @@
 
 4. Create a schema for a cinema called SkilFlix app and determine the appropriate relationship for that data! Data needed:
 
-  First Cinema
+- First Cinema
 
   - Cinema Name: CGF
   - Films:
@@ -106,7 +106,7 @@
     - Spiderman No Way Home
   - Location: Pondok Indah Mall
 
-  Second Cinema
+- Second Cinema
 
   - Cinema Name: Cinema31
   - Films:
