@@ -1,0 +1,51 @@
+1. Relasi: One-to-one Skema Data:
+{
+    "_id": "ObjectId('AAA')",
+    "fullName": "John Doe",
+    "email": "John.doe@mail.com",
+    "phoneNumber": "08123456789"
+}
+
+2. Relasi: One-to-many Skema Data:
+{
+    "_id": "ObjectId('AAA')",
+    "fullName": "John Doe",
+    "phoneNumber": "08123456789",
+    "address": ["Medan", "Jakarta"]
+}
+
+3. Relasi: One-to-many Skema Data:
+{
+    "_id": "ObjectId('AAA')",
+    "productName": "Kaos Polos",
+    "brandName": "SkilShirt",
+    "variants": ["ObjectId('BBB')", "ObjectId('CCC')"]
+},
+{
+    "_id": "ObjectId('BBB')",
+    "variantName": "Kaos Polos Hitam",
+    "color": "Hitam",
+    "quantity": 12,
+    "price": 99000
+},
+{
+    "_id": "ObjectId('CCC')",
+    "variantName": "Kaos Polos Navy",
+    "color": "Navy",
+    "quantity": 10,
+    "price": 99000
+}
+
+4. Relasi: One-to-one Skema Data:
+{
+    "_id": "ObjectId('AAA')",
+    "cinemaName": "CGF",
+    "films": ["Venom 2", "Spiderman No Way Home"],
+    "location": "Pondok Indah Mall"
+},
+{
+    "_id": "ObjectId('BBB')",
+    "cinemaName": "Cinema31",
+    "films": ["Venom 2", "Spiderman No Way Home"],
+    "location": "Mall Kelapa Gading"
+}
