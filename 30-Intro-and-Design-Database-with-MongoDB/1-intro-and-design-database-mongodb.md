@@ -8,7 +8,7 @@
 
   Schema:
 
-  ```{json}
+  ```
   {
       "_id" : "ObjectId('ABC')",
       "fullName" : "Dion",
@@ -25,7 +25,7 @@
 
   Schema:
 
-  ```{json}
+  ```
   {
       "_id" : "ObjectId('ABC')",
       "fullName" : "Dion",
@@ -36,31 +36,31 @@
 
 3. Create a schema for products data with many variants in SkilShop app and determine the appropriate relationship for that data! Data needed:
 
-Product
+  Product
 
-- Product Name: Kaos Polos
+  - Product Name: Kaos Polos
 
-- Brand Name: SkilShirt
+  - Brand Name: SkilShirt
 
-Varian Pertama
+  Varian Pertama
 
-- Varian Name 1: Kaos Polos Hitam
+  - Varian Name 1: Kaos Polos Hitam
 
-- Color: Hitam
+  - Color: Hitam
 
-- Quantity: 12
+  - Quantity: 12
 
-- Price: Rp 99.000
+  - Price: Rp 99.000
 
-Varian Kedua
+  Varian Kedua
 
-- Varian Name 2: Kaos Polos Navy
+  - Varian Name 2: Kaos Polos Navy
 
-- Color: Navy
+  - Color: Navy
 
-- Quantity: 10
+  - Quantity: 10
 
-- Price: Rp 99.000
+  - Price: Rp 99.000
 
 - Answer:
 
@@ -68,7 +68,7 @@ Varian Kedua
 
   Products Schema:
 
-  ```{json}
+  ```
   {
       "_id" : "ObjectId('ABC')",
       "productName" : "Kaos Polos",
@@ -79,7 +79,7 @@ Varian Kedua
 
   Variants Schema:
 
-  ```{json}
+  ```
   {
       "_id" : "ObjectId('DEF')",
       "variantName" : "Kaos Polos Hitam",
@@ -98,21 +98,21 @@ Varian Kedua
 
 4. Create a schema for a cinema called SkilFlix app and determine the appropriate relationship for that data! Data needed:
 
-First Cinema
+  First Cinema
 
-- Cinema Name: CGF
-- Films:
-  - Venom 2
-  - Spiderman No Way Home
-- Location: Pondok Indah Mall
+  - Cinema Name: CGF
+  - Films:
+    - Venom 2
+    - Spiderman No Way Home
+  - Location: Pondok Indah Mall
 
-Second Cinema
+  Second Cinema
 
-- Cinema Name: Cinema31
-- Films:
-  - Venom 2
-  - Spiderman No Way Home
-- Location: Mall Kelapa Gading
+  - Cinema Name: Cinema31
+  - Films:
+    - Venom 2
+    - Spiderman No Way Home
+  - Location: Mall Kelapa Gading
 
 - Answer:
 
@@ -135,7 +135,7 @@ Second Cinema
   }
   ```
 
-  Movie Schema:
+  Film Schema:
 
   ```{json}
   {
