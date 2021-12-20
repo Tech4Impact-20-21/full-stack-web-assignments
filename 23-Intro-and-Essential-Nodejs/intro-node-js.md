@@ -43,7 +43,7 @@
 
         Beberapa external module yang dapat diinstal melalui NPM adalah mongoose, express, angular dan react.
         
-        ```
+        ```bash
         npm install express
         npm install mongoose
         npm install -g @angular/cli
@@ -81,3 +81,9 @@ File web server:
 - [File web server](./index.js)
 
 Dokumentasi hasil:
+
+<img width="300" alt="image" src="https://user-images.githubusercontent.com/68428942/146764025-be73ff3c-0f35-4f16-a3dc-9c9b39445724.png">
+
+<img width="300" alt="image" src="https://user-images.githubusercontent.com/68428942/146764088-edffa4bf-0502-471e-ad33-6359fa47c924.png">
+
+<img width="300" alt="image" src="https://user-images.githubusercontent.com/68428942/146764187-576dc9f6-47fb-4436-a1e4-3714e884d5bd.png">
