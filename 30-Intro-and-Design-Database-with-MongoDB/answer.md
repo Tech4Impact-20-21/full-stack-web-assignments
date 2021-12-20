@@ -8,7 +8,7 @@ Data yang dibutuhkan adalah:
 <br>
 <br> Jawab : **Relasi One to One**
 <br> **Skema Data** :
-    ```js
+    ```
     {
         "_id": "ObjectId('AAA')",
         "fullName": "Refal Hady",
@@ -25,7 +25,7 @@ Data yang dibutuhkan adalah:
 <br>
 <br> Jawab : **Relasi One to Many**
 <br> **Skema Data** :
-    ```js   
+    ``` 
     {
         "_id": "ObjectId('AAA')",
         "fullName": "Refal Hady",
@@ -77,7 +77,7 @@ Price: Rp 99.000
 <br> Jawab : **Relasi One to Many**
 <br> **Skema Data** : 
 <br> - Product Schema
-```js   
+```
     {
         "_id": "ObjectId('BBB')",
         "productName": "Kaos Polos",
@@ -86,7 +86,7 @@ Price: Rp 99.000
     }
 ```
 <br> - Variants Schema
-```js   
+```   
     {
         "_id" : "ObjectId('BBB1')",
         "variantName" : "Kaos Polos Hitam",
@@ -127,7 +127,7 @@ Contoh Data yang dibutuhkan:
 <br> Jawab : **Relasi Many to Many**
 <br> **Skema Data** :
 - Cinema Schema
-    ```js   
+    ```   
     {
         "_id" : "ObjectId('CAA1')",
         "cinemaName" : "CGF",
@@ -142,7 +142,7 @@ Contoh Data yang dibutuhkan:
     }
     ```
 - Film Schema
-    ```js   
+    ```  
     {
         "_id" : "ObjectId('MV11')",
         "filmName" : "Venom 2",
