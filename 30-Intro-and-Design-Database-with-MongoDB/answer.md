@@ -5,9 +5,8 @@ Data yang dibutuhkan adalah:
 - **Full Name**
 - **Email**
 - **Phone Number**
-<br>
-<br> Jawab : **Relasi One to One**
-<br> **Skema Data** :
+<br>Jawab : **Relasi One to One** <br>
+**Skema Data** :
 ```
 {
     "_id": "ObjectId('AAA')",
@@ -22,9 +21,7 @@ Data yang dibutuhkan adalah:
 - **Full Name**
 - **Phone Number**
 - **Address (Max 2)**
-<br>
-<br> Jawab : **Relasi One to Many**
-<br> **Skema Data** :
+<br>Jawab : **Relasi One to Many**<br>**Skema Data** :
 ``` 
     {
         "_id": "ObjectId('AAA')",
@@ -123,36 +120,35 @@ Contoh Data yang dibutuhkan:
   - Venom 2
   - Spiderman No Way Home
 - Location: Mall Kelapa Gading
-<br>
-<br> Jawab : **Relasi Many to Many**
-<br> **Skema Data** :
-- Cinema Schema
-```   
-    {
-        "_id" : "ObjectId('CAA1')",
-        "cinemaName" : "CGF",
-        "films" : ["ObjectId('MV11')", "ObjectId('MV12')"],
-        "location" : "Pondok Indah Mall"
-    },
-    {
-        "_id" : "ObjectId('CAA2')",
-        "cinemaName" : "Cinema31",
-        "films" : ["ObjectId('MV11')", "ObjectId('MV12')"],
-        "location" : "Mall Kelapa Gading"
-    }
+<br>Jawab : **Relasi Many to Many**<br>**Skema Data** :
 ```
-- Film Schema
-```  
-    {
-        "_id" : "ObjectId('MV11')",
-        "filmName" : "Venom 2",
-        "Cinema" : ["ObjectId('CAA1')", "ObjectId('CAA2')"]
-    },
-    {
-        "_id" : "ObjectId('MV12')",
-        "filmName" : "Spiderman No Way Home",
-        "Cinema" : ["ObjectId('CAA1')", "ObjectId('CAA2')"]
-    }
+//cinema schema
+{
+    "_id" : "ObjectId('MV11')",
+    "cinemaName" : "CGF",
+    "films" : ["ObjectId('F11')", "ObjectId('F12')"],
+    "location" : "Pondok Indah Mall"
+},
+{
+    "_id" : "ObjectId('MV12')",
+    "cinemaName" : "Cinema31",
+    "films" : ["ObjectId('F11')", "ObjectId('F12')"],
+    "location" : "Mall Kelapa Gading"
+}
+```
+
+```
+//film schema
+{
+    "_id" : "ObjectId('F11')",
+    "filmName" : "Venom 2",
+    "playedByCinema" : ["ObjectId('MV11')", "ObjectId('MV12')"]
+},
+{
+    "_id" : "ObjectId('F12')",
+    "filmName" : "Spiderman No Way Home",
+    "playedByCinema" : ["ObjectId('MV11')", "ObjectId('MV12')"]
+}
 ```
 
 ## Example of Expected Results
