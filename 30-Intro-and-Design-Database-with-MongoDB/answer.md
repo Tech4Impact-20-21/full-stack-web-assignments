@@ -8,14 +8,14 @@ Data yang dibutuhkan adalah:
 <br>
 <br> Jawab : **Relasi One to One**
 <br> **Skema Data** :
-    ```
-    {
-        "_id": "ObjectId('AAA')",
-        "fullName": "Refal Hady",
-        "email": "refalhady@mail.com",
-        "phoneNumber": "08111222333"
-    }
-    ```
+```
+{
+    "_id": "ObjectId('AAA')",
+    "fullName": "Refal Hady",
+    "email": "refalhady@mail.com",
+    "phoneNumber": "08111222333"
+}
+```
 
 2. Buatlah skema untuk kebutuhan data alamat pengguna *SkilShop* dimana alamat yang dapat didaftarkan maksimal 2 alamat. Jelaskan juga relasi apakah yang tepat untuk data tersebut?
 Data yang dibutuhkan adalah:
@@ -25,7 +25,7 @@ Data yang dibutuhkan adalah:
 <br>
 <br> Jawab : **Relasi One to Many**
 <br> **Skema Data** :
-    ``` 
+``` 
     {
         "_id": "ObjectId('AAA')",
         "fullName": "Refal Hady",
@@ -43,7 +43,7 @@ Data yang dibutuhkan adalah:
             }
         ]
     }
-    ```
+```
 
 3. Buatlah skema untuk kebutuhan data dari suatu Products yang akan mempunyai banyak varian dari aplikasi *SkilShop*. Jelasskan juga relasi apakah yang tepat untuk data tersebut?
 Contoh data yang dibutuhkan adalah:
@@ -127,7 +127,7 @@ Contoh Data yang dibutuhkan:
 <br> Jawab : **Relasi Many to Many**
 <br> **Skema Data** :
 - Cinema Schema
-    ```   
+```   
     {
         "_id" : "ObjectId('CAA1')",
         "cinemaName" : "CGF",
@@ -140,9 +140,9 @@ Contoh Data yang dibutuhkan:
         "films" : ["ObjectId('MV11')", "ObjectId('MV12')"],
         "location" : "Mall Kelapa Gading"
     }
-    ```
+```
 - Film Schema
-    ```  
+```  
     {
         "_id" : "ObjectId('MV11')",
         "filmName" : "Venom 2",
@@ -153,7 +153,7 @@ Contoh Data yang dibutuhkan:
         "filmName" : "Spiderman No Way Home",
         "Cinema" : ["ObjectId('CAA1')", "ObjectId('CAA2')"]
     }
-    ```
+```
 
 ## Example of Expected Results
 Relasi: One-to-one
