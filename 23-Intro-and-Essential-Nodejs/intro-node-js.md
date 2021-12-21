@@ -63,7 +63,7 @@
 
         **File: index.js**
         ```Javascript
-        let kalkulator = require('./tambah);
+        let kalkulator = require('./tambah');
 
         let x=50, y=50;
 
