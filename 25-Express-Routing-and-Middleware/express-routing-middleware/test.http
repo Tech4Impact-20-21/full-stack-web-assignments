@@ -1,0 +1,21 @@
+GET http://localhost:3000/hewan
+
+POST http://localhost:3000/hewan
+Content-Type: application/json
+
+{
+    "nama": "Momo",
+    "spesies": "ular"
+}
+
+GET http://localhost:3000/hewan/6
+
+PUT http://localhost:3000/hewan/6
+Content-Type: application/json
+
+{
+    "nama": "Momo",
+    "spesies": "anjing"
+}
+
+DELETE http://localhost:3000/hewan/10
