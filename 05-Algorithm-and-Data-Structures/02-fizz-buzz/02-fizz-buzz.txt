@@ -1,0 +1,11 @@
+START
+READ(number,n)
+number=1
+INPUT n
+WHILE number <= n, DO DISPLAY(number++)
+IF number MOD 3 ==0 THEN DO DISPLAY “FIZZ”
+ELSE IF number MOD 5==0 THEN DO DISPLAY “BUZZ”
+ELSE DISPLAY (number)
+END IF
+
+END

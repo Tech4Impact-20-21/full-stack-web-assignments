@@ -1,0 +1,60 @@
+<!-- Kamu adalah seorang programmer yang bekerja pada sebuah perusahaan keamanan, kamu diminta untuk melakukan validasi terhadap sistem registrasi pelanggan, berikut merupakan langakah-langkah yang dapat kamu ambil untuk menyelesaikan tugasmu:
+
+menggambil data dari inputan user baik itu "email" ataupun "password"
+kriteria password yang diharapkan adalah
+mengandung huruf besar dan kecil
+mengandung angka
+mengandung simbol (!@#$%^&*)
+minimal 8 karakter
+melakukan pengecekan apakah email tersebut sudah sesuai dengan ketentuan atau tidak, yang mana akan memapilkan alert dengan pesan jika:
+SESUAI - melanjutkan ketahap selanjutnya yaitu validasi password
+TIDAK SESUAI - tolong masukan email yang valid
+melakukan pengecekan apakah password tersebut sudah sesuai dengan ketentuan atau tidak, yang mana akan memapilkan alert dengan pesan jika:
+SESUAI - Welcome to The Jungle
+TIDAK SESUAI - tolong masukan password sesuai ketentuan
+setelah alert ditampilkan, maka hapus password dari input field -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Skilvul</title>
+  </head>
+  <body>
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" />
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" />
+    <button id="btn-submit" style="display: block; margin-top: 10px">
+      submit
+    </button>
+    <script>
+      /// EDIT DOWN HERE
+    const inputEmail = document.querySelector("#email")
+    const inputPassword = document.querySelector("#password")
+    const btnSubmit = document.querySelector("#btn-submit")
+
+    const emailPattern = new RegExp(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)
+    const passPattern = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[/!@#$%^&*.])(?=.{8,})")
+
+    btnSubmit.addEventListener("click", function (a) {
+      a.preventDefault()
+      if (emailPattern.test(inputEmail.value)) {
+        if (passPattern.test(inputPassword.value)) {
+          alert(`Welcome to the Jungle`)
+          inputPassword.value = ""
+        } else {
+          alert(`Tolong masukkan password sesuai dengan ketentuan`)
+          inputPassword.value = ""
+        }
+      } else {
+        alert(`Tolong masukkan email yang valid`)
+        inputEmail.value = ""
+      }
+    })
+
+    </script>
+  </body>
+</html>
+

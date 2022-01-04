@@ -1,0 +1,32 @@
+Soal - 01
+Kamu diminta untuk melakukan analisa sederhana terhadap beberapa masalah dan tuliskan jawaban kamu di dalam file 08-rwd-soal-01.txt.
+
+1. Apa itu responsive web design?
+2. Sebutkan apa saja relative units yang dimiliki oleh CSS?
+3. Apa itu breakpoint? Bagaimana cara kita membuat hal tersebut?
+4. Apa yang dapat kita gunakan untuk memanipulasi tata letak suatu element dalam bidang 1 dimensi?
+5. Apa yang dapat kita gunakan untuk memanipulasi tata letak suatu element dalam bidang 2 dimensi?
+
+Jawab 
+1. Responsive web design adalah suatu cara pengembangan atau design web yang memanfaatkan design flexible serta dapat beradaptasi di berbagai device/platform yang berbeda. agar memberikan kenyamanan bagi penggunanya sesuai dengan konten yang ada.
+2. Relative unit berguna untuk mendesain website yang responsif karena ukurannya bisa berubah relatif terhadap parent atau ukuran layar.
+   relative units yang dimiliki oleh css :
+   %: Ukurannya relatif terhadap parent element
+   em: Ukurannya relatif terhadap font-size dari elemen saat ini
+   rem: Ukurannya relatif terhadap font-size root elemen (<html>). "rem" = "root em"
+   ch: Ukurannya mengikuti jumlah karakter (1 karakter sama dengan lebar dari karakter 0/nol font yang sedang aktif)
+   vh: Ukurannya relatif terhadap tinggi viewport (ukuran jendela tau aplikasi), 1vh = 1/100 dari tinggi viewport
+   vw: Ukurannya relatif terhadap lebar dari viewport. 1vw = 1/100 lebar viewport
+   vmin: Ukurannya relatif terhadap ukuran viewport yang lebih kecil (misalnya diorientasi portrait, lebar akan lebih kecil daripada tinggi). 1vmin = 1/100 dari ukuran viewport yang lebih kecil.
+   vmax: Sama dengan vmin, dia akan melihat ukuran viewport yang lebih besar
+   ex: Ukurannya relatif terhadap tinggi dari karakter "x" kecil font yang sedang aktif.
+3. Breakpoint adalah perubahan yang terjadi pada tampilan saat berganti device atau ukuran width. cara membuat breakpoint ada 2 cara dengan menggunakan media query untuk membuat tampilan dengan range width tertentu :
+   - membuat file css berbeda masing-masing device
+   - menggabungkan 1 file css untuk styling berbagai device
+   untuk membuat breakpoint biasanya kita menentukan range perpindahan dengan max width/min width tergantung pendekatan mana yang akan kita ambil untuk mendesign
+4.	Yang dapat digunakan untuk memanipulasi tata letak suatu element dalam bidang 1 dimensi adalah flex-box. 
+    Flex-box ini hanya mengatur tata letak dalam satu arah baik satu kolom maupun satu baris pada satu waktu. 
+    Biasanya digunakan untuk tata letak yang lebih kecil seperti komponen
+5.  Yang dapat digunakan untuk memanipulasi tata letak suatu element dalam bidang 2 dimensi adalah grid. 
+    Berbeda dengan flex-box, grid ini digunakan untuk mengatur tata letak yang lebih besar, seperti tata letak seluruh halaman. 
+    Grid ini mirip dengan tabel yang memungkinkan item disejajarkan dalam kolom dan baris.

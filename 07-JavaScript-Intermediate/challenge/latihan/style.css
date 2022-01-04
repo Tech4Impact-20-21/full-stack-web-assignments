@@ -1,0 +1,25 @@
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.header {
+    background-color: 	#7575c3;
+    font-size: 32px;
+    text-align: center;
+    padding: 1px;
+    color: white;
+}
+
+.footer {
+    background-color: 	#7575c3;
+    font-size: 32px;
+    text-align: center;
+    padding: 1px;
+    color: white;
+}
+
+
