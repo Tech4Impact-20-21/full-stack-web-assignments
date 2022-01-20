@@ -1,0 +1,13 @@
+BEGIN
+INPUT nilai temperatur
+INPUT temperatur awal
+
+IF (temperatur awal = fahrenheit) THEN
+	DISPLAY ((nilai temperatur - 32) * (5/9))
+ELSE IF (temperatur awal = kelvin) THEN
+	DISPLAY (nilai temperatur - 273.15)
+ELSE (temperatur awal = celcius) THEN
+	DISPLAY nilai temperatur
+ENDIF
+
+END

@@ -1,0 +1,17 @@
+BEGIN 
+INPUT string input_str
+SET length of input_str = n
+SET index_pertama = 0
+SET index_akhir = n-1
+
+WHILE index_pertama < index_akhir
+	IF char from index_pertama isn't the same as char from index_akhir
+		DISPLAY "FALSE"
+	ELSE
+		SET index_pertama to (index_pertama+1)
+		SET index_akhir to (index_akhir-1)
+ENDWHILE
+
+DISPLAY "TRUE"
+
+END

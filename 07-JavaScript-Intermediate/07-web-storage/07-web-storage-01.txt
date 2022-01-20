@@ -1,0 +1,11 @@
+1. Apa itu localstorage?
+Penyimpanan data yang tidak memiliki masa expired dan data akan disimpan di dalam host-nya.
+Data tidak dapat hilang kecuali dihilangkan melalui sintaks javascript dengan penyimpnanan maksimum 5 MB.
+
+2. Apa itu cookies?
+Penyimpanan dengan ukuran paling kecil/sedikit yaitu maksimal 4 KB. Cookies paling aman digunakan untuk
+menyimpan data-data yang penting dan untuk keamanan seperti token.
+
+3. Apa perbedaan localStorage dan sessionstorage?
+Pada session storage, penyimpanan data hanya dalam satu sesi saja, sehingga data akan hilang bila tab ditutup.
+Sedangkan localstorage, penyimpanan tidak memiliki masa expired dan data tidak bisa hilang kecuali dengan sintaks.
