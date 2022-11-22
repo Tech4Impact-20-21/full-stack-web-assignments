@@ -1,0 +1,7 @@
+1. URL heroku : https://express-heroku-todolist.herokuapp.com/
+2. Endpoints:
+- [GET] Get all todos : https://express-heroku-todolist.herokuapp.com/todos
+- [GET] Get todo by ID : https://express-heroku-todolist.herokuapp.com/todos/:id
+- [POST] Add todo : https://express-heroku-todolist.herokuapp.com/todos
+- [PATCH] Update todo : https://express-heroku-todolist.herokuapp.com/todos/:id
+- [DELETE] Delete todo : https://express-heroku-todolist.herokuapp.com/todos/:id

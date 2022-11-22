@@ -1,0 +1,49 @@
+<!-- Question - 02 -->
+<!-- Create a registration validation system: -->
+<!-- - Email -> if valid create alert to continue to password validation -->
+<!-- - Password -> if valid (uppercase, lowercase, digit, symbol, min. 8 characters) shows alert "Welcomt to The Jungle" -->
+<!-- Delete password from input field after alert is shown -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Skilvul</title>
+  </head>
+  <body>
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" />
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" />
+    <button id="btn-submit" style="display: block; margin-top: 10px">
+      submit
+    </button>
+    <script>
+        let email = document.querySelector('#email');
+        let password = document.querySelector('#password');
+        let btn = document.querySelector('#btn-submit');
+        // Email pattern : [a-zA-Z0-9_]+ can be followed by (./-) & some [a-zA-Z0-9_]+ or not then must be followed by '@' & some [a-zA-Z0-9_]+ then can be followed by (./-) & some [a-zA-Z0-9_]+ & must be followed by (.) & 2 / 3 [a-zA-Z0-9_]+
+        let emailValidation = new RegExp(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/);
+        // Password pattern
+        let passValidation = new RegExp(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/);
+
+        btn.onclick = function(e){
+          e.preventDefault();
+          email = email.value;
+          password = password.value;
+          if(emailValidation.test(email)){
+            if(passValidation.test(password)){
+              alert('Welcome to The Jungle');
+            } else{
+              alert('tolong masukkan password sesuai ketentuan');
+            }
+          } else {
+            alert('tolong masukkan email yang valid');
+          }
+          document.getElementById('email').value = "";
+          document.getElementById('password').value = "";
+        }
+    </script>
+  </body>
+</html>

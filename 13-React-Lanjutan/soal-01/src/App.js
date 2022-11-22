@@ -9,12 +9,56 @@ export default function App() {
   const [total, setTotal] = useState(0);
   const [purchasedItem, setPurchasedItem] = useState(0);
   const [cart, setCart] = useState([]);
+  
 
-  const addToCart = (id) => {};
+  useEffect(() => {
+    setPurchasedItem()
+  })
 
-  const decreaseCartAmount = (id) => {};
+  const addToCart = (id) => {
+    console.log(id)
+    // const found = cart.find(value => value.id === id);
+    // const item = menus.find(value => value.id === id);
+    // const remainingItems = cart.find(value => value.id !== id)
+    
+    // if(found){
+    //   found.amount += 1
+    //   setCart([...remainingItems, found])
+    // }else{
+    //   setCart([...cart, {
+    //     id: item.id,
+    //     name: item.name,
+    //     price: item.price,
+    //     amount: 1,
+    //   }])
+    // }
+    
+  };
 
-  const increaseCartAmount = (id) => {};
+  const decreaseCartAmount = (id) => {
+    const found = cart.find(value => value.id === id);
+    const remainingItems = cart.find(value => value.id !== id)
+    
+    if(found){
+      if(found.amount > 1){
+        found.amount -= 1
+        setCart([...remainingItems, found])
+      }else{
+        setCart([...remainingItems])
+      }
+      
+    }
+  };
+
+  const increaseCartAmount = (id) => {
+    const found = cart.find(value => value.id === id);
+    const remainingItems = cart.find(value => value.id !== id)
+    
+    if(found){
+      found.amount += 1
+      setCart([...remainingItems, found])
+    }
+  };
 
   return (
     <div className="bg-secondary">
