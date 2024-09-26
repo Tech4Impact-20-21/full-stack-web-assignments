@@ -1,0 +1,64 @@
+<!-- Soal - 02
+Kamu adalah seorang programmer yang bekerja pada sebuah perusahaan keamanan, kamu diminta untuk melakukan validasi terhadap sistem registrasi pelanggan, berikut merupakan langakah-langkah yang dapat kamu ambil untuk menyelesaikan tugasmu:
+
+1. menggambil data dari inputan user baik itu "email" ataupun "password"
+2. kriteria password yang diharapkan adalah
+        - mengandung huruf besar dan kecil
+        - mengandung angka
+        - mengandung simbol (!@#$%^&*)
+        - minimal 8 karakter
+3. melakukan pengecekan apakah email tersebut sudah sesuai dengan ketentuan atau tidak, yang mana akan memapilkan alert dengan pesan jika:
+        - SESUAI - melanjutkan ketahap selanjutnya yaitu validasi password
+        - TIDAK SESUAI - tolong masukan email yang valid
+4. melakukan pengecekan apakah password tersebut sudah sesuai dengan ketentuan atau tidak, yang mana akan memapilkan alert dengan pesan jika:
+        - SESUAI - Welcome to The Jungle
+        - TIDAK SESUAI - tolong masukan password sesuai ketentuan
+5. setelah alert ditampilkan, maka hapus password dari input field -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Skilvul</title>
+  </head>
+  <body>
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" />
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" />
+    <button id="btn-submit" style="display: block; margin-top: 10px">
+      submit
+    </button>
+    <script>
+      /// EDIT DOWN HERE
+        const elBtnSubmit = document.querySelector("#btn-submit");
+        const elInputEmail = document.querySelector("#email");
+        const elInputPassword = document.querySelector("#password");
+        const regexEmail = /^[A-Za-z.]+[\w\d]+@\w+\.\w+/;
+        const regexPassword = /[A-Za-z\d-!$%^&*()_+|~=`{}\[\]:";'<>?,.\/]{8,}/;
+        const regexCapital = /[A-Z]/
+        const regexSmall = /[a-z]/
+        const regexNumber = /[0-9]/
+        const regexSymbol = /[-!$%^&*()_+|~=`{}\[\]:";'<>?,.\/]/
+
+        elBtnSubmit.onclick = function(e) {
+            e.preventDefault();
+
+            if(!elInputEmail.value.match(regexEmail)){
+                alert("tolong masukan email yang valid");
+            }
+            else if(elInputPassword.value.match(regexPassword) &&
+                    elInputPassword.value.match(regexCapital) &&
+                    elInputPassword.value.match(regexSmall) &&
+                    elInputPassword.value.match(regexNumber) &&
+                    elInputPassword.value.match(regexSymbol)){
+                alert("Welcome to The Jungle");
+            }
+            else{
+                alert("tolong masukan password sesuai ketentuan");
+            }
+        }
+    </script>
+  </body>
+</html>

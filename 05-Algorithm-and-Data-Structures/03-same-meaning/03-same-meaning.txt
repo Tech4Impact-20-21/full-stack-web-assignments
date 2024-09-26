@@ -1,0 +1,8 @@
+1.BEGIN
+2.    INPUT "word"
+3.    GET "tempWord" value from "word"
+4.    REVERSE "tempWord"
+5.    IF "word" same as "tempWord"
+6.        THEN TRUE
+7.    ELSE FALSE
+8.END

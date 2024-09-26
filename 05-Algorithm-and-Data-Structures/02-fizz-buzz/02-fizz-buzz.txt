@@ -1,0 +1,14 @@
+1.BEGIN
+2.    INPUT "n" as 20
+3.    STORE "m" with 1
+4.
+5.    WHILE "m" lesser than "n"
+6.           IF "m" mod by 3 IS 0 THEN
+7.               DISPLAY "Fizz"
+8.           IF ELSE "m" mod by 5 IS 0 THEN
+9.               DISPLAY "Buzz"
+10.           IF ELSE "m" mod 3 IS 0 and m divided by 5 IS 0 THEN
+11.               DISPLAY "FizzBuzz"
+12.           ELSE DISPLAY "m"
+13.           ADD "m" by 1
+14.END
